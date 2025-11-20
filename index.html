@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <script type="module" crossorigin src="/assets/index-6jwzTZos.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DU0hcohy.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacked Learning Waterwash Quadrant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="max-w-6xl">
+      <!-- Header -->
+      <div class="header">
+        <h1>Stacked Learning Waterwash Quadrant</h1>
+        <div class="header-divider"></div>
+      </div>
+
+      <!-- Quadrant Grid (shown initially) -->
+      <div id="quadrant-grid" class="quadrant-grid">
+        <button class="quadrant-button" data-quadrant="product">Online</button>
+        <button class="quadrant-button" data-quadrant="transport">Offline</button>
+        <button class="quadrant-button" data-quadrant="storage">Chemical</button>
+        <button class="quadrant-button" data-quadrant="process">Deionised Water</button>
+      </div>
+
+      <!-- Navigation Pills (hidden initially) -->
+      <div id="nav-pills" class="nav-pills hidden">
+        <button class="nav-pill" data-quadrant="product">Online</button>
+        <button class="nav-pill" data-quadrant="transport">Offline</button>
+        <button class="nav-pill" data-quadrant="storage">Chemical</button>
+        <button class="nav-pill" data-quadrant="process">Deionised Water</button>
+      </div>
+
+      <!-- Instruction text -->
+      <div class="instruction-text" id="instruction-text">
+        Hover over each quadrant to explore, click to view details
+      </div>
+
+      <!-- Content Area -->
+      <div id="content-area"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
